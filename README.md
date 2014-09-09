@@ -1,0 +1,4 @@
+SIF
+===
+
+Squid Image Fetcher
