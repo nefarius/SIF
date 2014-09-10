@@ -2,6 +2,11 @@ Squid Image Fetcher
 ===================
 Work in progress.
 
+Requirements
+------------
+ * [Python 3.x.x](https://www.python.org/download/releases/3.3.0/)
+ * Squid 2.7+, 3.x+ with working configuration
+
 Adjustments of squid.conf
 -----------------
 Add (or adapt) the following directives to your `squid.conf` file:
