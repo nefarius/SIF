@@ -1,3 +1,4 @@
+# written for Python 3.3.x
 import re, os, time, sys
 from PIL import Image
 from io import BytesIO
@@ -5,14 +6,19 @@ from threading import Thread
 from urllib.parse import urlsplit
 from urllib.request import urlopen
 
+### --- BEGIN ADJUST THIS --- ###
+# directory where images get stored
 base_path = 'D:\\squid\\new'
+# minimal image height (smaller will be ignored)
 min_height = 300 # px
+# minimal image width (smaller will be ignored)
 min_width = 300 # px
+### ---  END ADJUST THIS  --- ###
 
 def parse_input(line):
 	try:
 		# get url part from squids' input
-		url = line.split(' ')[0];
+		url = line.split(' ')[1];
 		# download header
 		req_res = urlopen(url)
 		# get header content

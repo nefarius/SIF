@@ -11,8 +11,9 @@ url_rewrite_program C:\\Python33\\python.exe -u C:\\squid\\libexec\\fetchimg.py
 # number of python processes (instances of the script) to spawn
 #     (decrease value if low on system resources, increase for better performance)
 url_rewrite_children 10
-# set to zero or comment out
-url_rewrite_concurrency 0
+# number of requests sent to URL helper in parallel
+#     (decrease value if low on system resources, increase for better performance)
+url_rewrite_concurrency 10
 ```
 Restart the service afterwards.
 
