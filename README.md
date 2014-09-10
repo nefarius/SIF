@@ -5,7 +5,7 @@ Work in progress.
 Requirements
 ------------
  * [Python 3.x.x](https://www.python.org/download/releases/3.3.0/)
- * Squid 2.7+, 3.x+ with working configuration
+ * [Squid 2.7+, 3.x+](http://wiki.squid-cache.org/SquidFaq/BinaryPackages) with working configuration
 
 Adjustments of squid.conf
 -----------------
